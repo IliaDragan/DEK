@@ -476,8 +476,6 @@ text-transform: uppercase;
 }
 #main-menu-links {
   float: left;
-  font-size: 0.929em;
-  margin: 0;
 }
 #main-menu-links li {
   float: left; /* LTR */
@@ -574,7 +572,7 @@ text-transform: uppercase;
 
 .region-help {
   padding: 0 1.5em;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 /* ----------------- Content ------------------ */
