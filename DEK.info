@@ -1,5 +1,5 @@
 name = DEK
-description = Default installation profile for dek.dk.
+description = Default installation profile for DEK.
 core = 7.x
 version = 7.x-1.0
 theme = seven
@@ -11,6 +11,7 @@ dependencies[] = dblog
 dependencies[] = menu
 dependencies[] = path
 dependencies[] = taxonomy
+dependencies[] = toolbar
 dependencies[] = field_ui
 
 

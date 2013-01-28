@@ -9,7 +9,7 @@
 /**
  * Implementation of hook_install().
  */
-function dek_install() {
+function DEK_install() {
   theme_enable(array('seven', 'dek'));
   $variables = array(
     'admin_theme' => 'seven',

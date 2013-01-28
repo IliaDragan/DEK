@@ -9,7 +9,7 @@
 /**
  * Implements hook_form_FORM_ID_alter().
  */
-function dek_form_install_configure_form_alter(&$form, $form_state) {
+function DEK_form_install_configure_form_alter(&$form, $form_state) {
   // basic site information
   $form['site_information']['site_name']['#default_value'] = 'dek';
   $form['site_information']['site_mail']['#default_value'] = 'noreply@dek.dk';
@@ -37,10 +37,10 @@ function dek_form_install_configure_form_alter(&$form, $form_state) {
 /**
  * Implements hook_install_tasks().
  */
-function dek_install_tasks() {
+function DEK_install_tasks() {
   return array(
-    'dek_install_features' => array(
-      'display_name' => st('Install dek features'),
+    'DEK_install_features' => array(
+      'display_name' => st('Install DEK features'),
       'type' => 'batch',
     ),
   );
@@ -51,7 +51,7 @@ function dek_install_tasks() {
 /**
  * Install features.
  */
-function dek_install_features() {
+function DEK_install_features() {
   $files = system_rebuild_module_data();
 
   $features = array();
@@ -91,7 +91,7 @@ function dek_install_features() {
     }
     $batch = array(
       'operations' => $operations,
-      'title' => st('Installing dek features'),
+      'title' => st('Installing DEK features'),
       'error_message' => st('The installation has encountered an error.'),
       'finished' => '_install_profile_modules_finished',
     );

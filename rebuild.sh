@@ -2,7 +2,7 @@
 
 # rebuild.sh - update contrib modules, themes, and libraries
 
-makefile=`find . -name dek.make`
+makefile=`find . -name DEK.make`
 
 if [[ -z $makefile || ! -f $makefile ]]
 then
@@ -21,5 +21,5 @@ else
 
   # add "--download-mechanism='drush_make'" if curl is not available on your system
   echo 'Updating contrib modules and themes...'
-  drush -y make --working-copy --no-core --contrib-destination=. dek.make
+  drush -y make --working-copy --no-core --contrib-destination=. DEK.make
 fi

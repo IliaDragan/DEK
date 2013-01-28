@@ -1,4 +1,4 @@
-; makefile for dek.dk
+; makefile for DEK
 
 ; define core version and drush make compatibility
 
