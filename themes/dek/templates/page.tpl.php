@@ -142,7 +142,12 @@
         )); ?>
       </div> <!-- /#main-menu -->
     <?php endif; ?>
-    <?php print render($page['help']);?>
+
+    <?php if ($page['language']): ?>
+      <div id="language"><div class="section clearfix">
+        <?php print render($page['language']); ?>
+      </div></div> <!-- /.section, /#language -->
+    <?php endif; ?>
 
     <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
