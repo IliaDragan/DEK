@@ -11,7 +11,7 @@ stylesheets[all][] = css/colors.css
 stylesheets[print][] = css/print.css
 
 regions[header] = Header
-regions[help] = Help
+regions[language] = Language
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom
 regions[highlighted] = Highlighted

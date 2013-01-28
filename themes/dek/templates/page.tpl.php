@@ -143,6 +143,12 @@
       </div> <!-- /#main-menu -->
     <?php endif; ?>
 
+    <?php if ($page['language']): ?>
+      <div id="language"><div class="section clearfix">
+        <?php print render($page['language']); ?>
+      </div></div> <!-- /.section, /#language -->
+    <?php endif; ?>
+
     <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
         <?php print theme('links__system_secondary_menu', array(
@@ -199,7 +205,6 @@
           <?php print render($tabs); ?>
         </div>
       <?php endif; ?>
-      <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links">
           <?php print render($action_links); ?>

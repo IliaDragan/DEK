@@ -1,0 +1,10 @@
+name = Theme settings
+core = 7.x
+package = Theme
+dependencies[] = ctools
+dependencies[] = strongarm
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = site_name
+features[variable][] = site_slogan
+features[variable][] = theme_dek_settings
