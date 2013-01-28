@@ -1,0 +1,43 @@
+name = DEK
+description = Default installation profile for dek.dk.
+core = 7.x
+version = 7.x-1.0
+theme = seven
+
+; core
+
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = field_ui
+
+
+; contrib
+
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = module_filter
+dependencies[] = ctools
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = file_entity
+dependencies[] = i18n
+dependencies[] = panels
+dependencies[] = pathauto
+dependencies[] = references
+dependencies[] = references_dialog
+dependencies[] = special_menu_items
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = views
+dependencies[] = wysiwyg
+
+; custom
+
+
+; features
+
+
