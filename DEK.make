@@ -28,6 +28,11 @@ projects[module_filter][download][tag] = 7.x-1.7
 
 ; modules
 
+projects[advanced_help][subdir] = contrib
+projects[advanced_help][download][type] = git
+projects[advanced_help][download][url] = http://git.drupal.org/project/advanced_help.git
+projects[advanced_help][download][tag] = 7.x-1.0
+
 projects[ctools][subdir] = contrib
 projects[ctools][download][type] = git
 projects[ctools][download][url] = http://git.drupal.org/project/ctools.git
@@ -93,6 +98,11 @@ projects[transliteration][subdir] = contrib
 projects[transliteration][download][type] = git
 projects[transliteration][download][url] = http://git.drupal.org/project/transliteration.git
 projects[transliteration][download][tag] = 7.x-3.1
+
+projects[variable][subdir] = contrib
+projects[variable][download][type] = git
+projects[variable][download][url] = http://git.drupal.org/project/variable.git
+projects[variable][download][tag] = 7.x-2.2
 
 projects[views][subdir] = contrib
 projects[views][download][type] = git
