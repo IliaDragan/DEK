@@ -139,10 +139,10 @@
             'level' => 'h2',
             'class' => array('element-invisible'),
           ),
-        ));
-        print render($page['help']);?>
+        )); ?>
       </div> <!-- /#main-menu -->
     <?php endif; ?>
+    <?php print render($page['help']);?>
 
     <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
