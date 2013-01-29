@@ -114,6 +114,11 @@ projects[wysiwyg][download][type] = git
 projects[wysiwyg][download][url] = http://git.drupal.org/project/wysiwyg.git
 projects[wysiwyg][download][tag] = 7.x-2.2
 
+projects[adaptive_image][subdir] = contrib
+projects[adaptive_image][download][type] = git
+projects[adaptive_image][download][url] = http://git.drupal.org/project/adaptive_image.git
+projects[adaptive_image][download][tag] = 7.x-1.4
+
 ; themes
 
 
