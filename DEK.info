@@ -38,6 +38,7 @@ dependencies[] = transliteration
 dependencies[] = views
 dependencies[] = variable
 dependencies[] = wysiwyg
+dependencies[] = adaptive_image
 
 ; custom
 
