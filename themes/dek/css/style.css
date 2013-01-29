@@ -2,7 +2,6 @@
 /* ---------- Overall Specifications ---------- */
 
 body {
-  line-height: 1.5;
   font-size: 87.5%;
   word-wrap: break-word;
   margin: 0;
@@ -99,9 +98,12 @@ pre {
   white-space: pre-wrap;
 }
 #header {
-  border-bottom: 1px solid #E4E8E7;
+  border-bottom: 2px solid #E4E8E7;
   margin-left: 20px;
   margin-right: 20px;
+}
+li a.active {
+    color: #68696B;
 }
 
 
@@ -236,7 +238,7 @@ table ul.links li {
 .block ul {
   list-style: none;
   margin: 0;
-  padding: 0 0 0.25em 1em; /* LTR */
+  padding: 0;
 }
 .contextual-links-wrapper {
   font-size: small !important;
@@ -252,6 +254,7 @@ ul.contextual-links {
 }
 ul.menu li {
   margin: 0;
+  padding: 0;
 }
 .region-content ul,
 .region-content ol {
@@ -471,27 +474,27 @@ text-transform: uppercase;
   padding-left: 50%;
 }
 #block-system-main-menu {
-  clear: both;
   text-transform: uppercase;
-  width: 320px;
+  width: auto;
   float: left;
-  margin-left: -290px;
+  margin-left: -200px;
+  height: 30px;
+  border-bottom: 2px solid #E4E8E7;
+
 }
 #block-system-main-menu li {
   float: left; /* LTR */
   list-style: none;
+  padding-right: 10px;
+}
+#block-system-main-menu li.last{
+  padding: 0;
 }
 #block-system-main-menu a {
-  color: #333;
   float: left; /* LTR */
   height: 2.4em;
   line-height: normal;
-  padding: 0 0.4em;
   text-shadow: 0 1px #eee;
-}
-#block-system-main-menus a:hover,
-#block-system-main-menu a:focus {
-  background: #f6f6f2;
 }
 #block-system-main-menu a:active {
   background: #b3b3b3;
@@ -1644,17 +1647,21 @@ div.admin-panel .description {
 
 /* ---------- Language switcher ----------- */
 #block-locale-language {
-  width: 260px;
+  width: 98px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: 90px;
+  border-bottom: 2px solid #E4E8E7;
 }
 #block-locale-language ul li a {
   float: left;
-  margin: 0 3px;
+  margin: 0 5px 0 0;
   color: #68696B;
   line-height: normal;
   font-size: 0.929em;
 }
 #block-locale-language ul li a.active {
-  border-bottom: 1px solid #68696B;
+  /*border-bottom: 2px solid #68696B;*/
 }
 
 
