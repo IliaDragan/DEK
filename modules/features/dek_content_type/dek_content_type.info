@@ -2,6 +2,7 @@ name = DEK content type
 description = Content types for DEK project
 core = 7.x
 package = Content type
+php = 5.2.4
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = image
