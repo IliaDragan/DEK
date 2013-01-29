@@ -1647,7 +1647,7 @@ div.admin-panel .description {
 
 /* ---------- Language switcher ----------- */
 #block-locale-language {
-  width: 98px;
+  width: 100px;
   height: 30px;
   overflow: hidden;
   margin-left: 90px;
