@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DEK content type feature.
+ */
+
+include_once 'dek_content_type.features.inc';
