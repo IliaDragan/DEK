@@ -28,7 +28,6 @@ dependencies[] = features
 dependencies[] = features_extra
 dependencies[] = file_entity
 dependencies[] = i18n
-dependencies[] = panels
 dependencies[] = pathauto
 dependencies[] = references
 dependencies[] = references_dialog
@@ -45,4 +44,5 @@ dependencies[] = wysiwyg
 
 ; features
 
-
+dek_features[] = dek_variables
+dek_features[] = theme_settings
