@@ -7,6 +7,7 @@ theme = seven
 ; core
 
 dependencies[] = block
+dependencies[] = contextual_links
 dependencies[] = dblog
 dependencies[] = menu
 dependencies[] = path
@@ -17,7 +18,6 @@ dependencies[] = field_ui
 
 ; contrib
 
-
 dependencies[] = advanced_help
 dependencies[] = devel
 dependencies[] = diff
@@ -25,6 +25,7 @@ dependencies[] = module_filter
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
+dependencies[] = features_extra
 dependencies[] = file_entity
 dependencies[] = i18n
 dependencies[] = panels
