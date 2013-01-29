@@ -467,56 +467,38 @@ text-transform: uppercase;
 }
 
 /* --------------- Main Menu ------------ */
-
-#main-menu {
+#menu {
+  padding-left: 50%;
+}
+#block-system-main-menu {
   clear: both;
   text-transform: uppercase;
-  width: 960px;
-  margin-left: auto;
-}
-#main-menu-links {
+  width: 320px;
   float: left;
+  margin-left: -290px;
 }
-#main-menu-links li {
+#block-system-main-menu li {
   float: left; /* LTR */
   list-style: none;
-  padding: 0 1px;
-  margin: 0 1px;
 }
-#main-menu-links a {
+#block-system-main-menu a {
   color: #333;
-  background: #ccc;
-  background: rgba(255, 255, 255, 0.7);
   float: left; /* LTR */
   height: 2.4em;
   line-height: normal;
   padding: 0 0.4em;
   text-shadow: 0 1px #eee;
-  -khtml-border-radius-topleft: 8px;
-  -khtml-border-radius-topright: 8px;
-  -moz-border-radius-topleft: 8px;
-  -moz-border-radius-topright: 8px;
-  -webkit-border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
-#main-menu-links a:hover,
-#main-menu-links a:focus {
+#block-system-main-menus a:hover,
+#block-system-main-menu a:focus {
   background: #f6f6f2;
-  background: rgba(255, 255, 255, 0.95);
 }
-#main-menu-links a:active {
+#block-system-main-menu a:active {
   background: #b3b3b3;
   background: rgba(255, 255, 255, 1);
 }
-#main-menu-links li a.active {
+#block-system-main-menu li a.active {
   border-bottom: none;
-}
-.featured #main-menu-links li a:active,
-.featured #main-menu-links li a.active {
-  background: #f0f0f0;
-  background: rgba(240, 240, 240, 1.0);
 }
 
 /* --------------- Secondary Menu ------------ */
@@ -1661,9 +1643,12 @@ div.admin-panel .description {
 }
 
 /* ---------- Language switcher ----------- */
+#block-locale-language {
+  width: 260px;
+}
 #block-locale-language ul li a {
   float: left;
-  margin: 0 5px;
+  margin: 0 3px;
   color: #68696B;
   line-height: normal;
   font-size: 0.929em;

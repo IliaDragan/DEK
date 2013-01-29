@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Map view feature.
+ */
+
+include_once 'map_view.features.inc';

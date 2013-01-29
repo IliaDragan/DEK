@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Building plot feature.
+ */
+
+include_once 'building_plot.features.inc';
