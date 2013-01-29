@@ -24,9 +24,6 @@ body.overlay {
 #header {
   background-color: #F5F9F8;
 }
-a {
-  color: #0071B3;
-}
 a:hover,
 a:focus {
   color: #018fe2;

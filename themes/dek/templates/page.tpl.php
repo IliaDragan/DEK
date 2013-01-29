@@ -64,18 +64,10 @@
  *
  * Regions:
  * - $page['header']: Items for the header region.
- * - $page['featured']: Items for the featured region.
  * - $page['highlighted']: Items for the highlighted content region.
  * - $page['help']: Dynamic help text, mostly for admin pages.
  * - $page['content']: The main content of the current page.
  * - $page['sidebar_first']: Items for the first sidebar.
- * - $page['triptych_first']: Items for the first triptych.
- * - $page['triptych_middle']: Items for the middle triptych.
- * - $page['triptych_last']: Items for the last triptych.
- * - $page['footer_firstcolumn']: Items for the first footer column.
- * - $page['footer_secondcolumn']: Items for the second footer column.
- * - $page['footer_thirdcolumn']: Items for the third footer column.
- * - $page['footer_fourthcolumn']: Items for the fourth footer column.
  * - $page['footer']: Items for the footer region.
  *
  * @see template_preprocess()
@@ -143,10 +135,10 @@
       </div> <!-- /#main-menu -->
     <?php endif; ?>
 
-    <?php if ($page['language']): ?>
-      <div id="language"><div class="section clearfix">
-        <?php print render($page['language']); ?>
-      </div></div> <!-- /.section, /#language -->
+    <?php if ($page['menu']): ?>
+      <div id="menu"><div class="section clearfix">
+        <?php print render($page['menu']); ?>
+      </div></div> <!-- /.section, /#menu -->
     <?php endif; ?>
 
     <?php if ($secondary_menu): ?>
@@ -172,12 +164,6 @@
     </div></div> <!-- /.section, /#messages -->
   <?php endif; ?>
 
-  <?php if ($page['featured']): ?>
-    <div id="featured"><div class="section clearfix">
-      <?php print render($page['featured']); ?>
-    </div></div> <!-- /.section, /#featured -->
-  <?php endif; ?>
-
   <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
 
     <?php if ($breadcrumb): ?>
@@ -191,7 +177,6 @@
     <?php endif; ?>
 
     <div id="content" class="column"><div class="section">
-      <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
@@ -223,24 +208,7 @@
 
   </div></div> <!-- /#main, /#main-wrapper -->
 
-  <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
-    <div id="triptych-wrapper"><div id="triptych" class="clearfix">
-      <?php print render($page['triptych_first']); ?>
-      <?php print render($page['triptych_middle']); ?>
-      <?php print render($page['triptych_last']); ?>
-    </div></div> <!-- /#triptych, /#triptych-wrapper -->
-  <?php endif; ?>
-
   <div id="footer-wrapper"><div class="section">
-
-    <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
-      <div id="footer-columns" class="clearfix">
-        <?php print render($page['footer_firstcolumn']); ?>
-        <?php print render($page['footer_secondcolumn']); ?>
-        <?php print render($page['footer_thirdcolumn']); ?>
-        <?php print render($page['footer_fourthcolumn']); ?>
-      </div> <!-- /#footer-columns -->
-    <?php endif; ?>
 
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
