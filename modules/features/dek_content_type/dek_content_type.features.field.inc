@@ -79,7 +79,7 @@ function dek_content_type_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '31',
+        'weight' => '2',
       ),
     ),
   );
@@ -122,7 +122,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '1',
+          'weight' => 5,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -146,7 +146,7 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '32',
+        'weight' => '3',
       ),
     ),
   );
@@ -189,7 +189,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '2',
+          'weight' => 6,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -213,7 +213,7 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '33',
+        'weight' => '4',
       ),
     ),
   );
@@ -256,7 +256,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => 7,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -280,19 +280,19 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '34',
+        'weight' => '5',
       ),
     ),
   );
 
-  // Exported field: 'node-basic_page-field_image_basic_page'.
-  $fields['node-basic_page-field_image_basic_page'] = array(
+  // Exported field: 'node-basic_page-field_images'.
+  $fields['node-basic_page-field_images'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image_basic_page',
+      'field_name' => 'field_images',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -309,7 +309,7 @@ function dek_content_type_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '3',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -338,8 +338,8 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image_basic_page',
-      'label' => 'Image',
+      'field_name' => 'field_images',
+      'label' => 'Images',
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
@@ -356,11 +356,11 @@ function dek_content_type_field_default_fields() {
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'adaptive',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '35',
+        'weight' => '6',
       ),
     ),
   );
@@ -419,7 +419,7 @@ function dek_content_type_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Deck',
+      'label' => 'Body',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -435,73 +435,6 @@ function dek_content_type_field_default_fields() {
         ),
         'type' => 'text_textarea_with_summary',
         'weight' => '31',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-building_plot-field_body'.
-  $fields['node-building_plot-field_body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'building_plot',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 1,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_body',
-      'label' => 'Body',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '20',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '32',
       ),
     ),
   );
@@ -591,14 +524,14 @@ function dek_content_type_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-building_plot-field_image_building_plot'.
-  $fields['node-building_plot-field_image_building_plot'] = array(
+  // Exported field: 'node-building_plot-field_images'.
+  $fields['node-building_plot-field_images'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image_building_plot',
+      'field_name' => 'field_images',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -615,7 +548,7 @@ function dek_content_type_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '4',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -644,29 +577,29 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image_building_plot',
-      'label' => 'Image',
+      'field_name' => 'field_images',
+      'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 1,
+        'alt_field' => 0,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 1,
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'adaptive',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '37',
+        'weight' => '38',
       ),
     ),
   );
@@ -794,7 +727,7 @@ function dek_content_type_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Deck',
+      'label' => 'Body',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -809,7 +742,7 @@ function dek_content_type_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '31',
+        'weight' => '2',
       ),
     ),
   );
@@ -878,19 +811,19 @@ function dek_content_type_field_default_fields() {
           'size' => '50',
         ),
         'type' => 'text_textfield',
-        'weight' => '37',
+        'weight' => '7',
       ),
     ),
   );
 
-  // Exported field: 'node-cluster-field_column_1_cluster'.
-  $fields['node-cluster-field_column_1_cluster'] = array(
+  // Exported field: 'node-cluster-field_column_1'.
+  $fields['node-cluster-field_column_1'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_column_1_cluster',
+      'field_name' => 'field_column_1',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -921,7 +854,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => 7,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -931,7 +864,7 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_column_1_cluster',
+      'field_name' => 'field_column_1',
       'label' => 'Column 1',
       'required' => 0,
       'settings' => array(
@@ -945,19 +878,19 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '32',
+        'weight' => '3',
       ),
     ),
   );
 
-  // Exported field: 'node-cluster-field_column_2_cluster'.
-  $fields['node-cluster-field_column_2_cluster'] = array(
+  // Exported field: 'node-cluster-field_column_2'.
+  $fields['node-cluster-field_column_2'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_column_2_cluster',
+      'field_name' => 'field_column_2',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -988,7 +921,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 2,
+          'weight' => 8,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -998,7 +931,7 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_column_2_cluster',
+      'field_name' => 'field_column_2',
       'label' => 'Column 2',
       'required' => 0,
       'settings' => array(
@@ -1012,19 +945,19 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '33',
+        'weight' => '4',
       ),
     ),
   );
 
-  // Exported field: 'node-cluster-field_column_3_cluster'.
-  $fields['node-cluster-field_column_3_cluster'] = array(
+  // Exported field: 'node-cluster-field_column_3'.
+  $fields['node-cluster-field_column_3'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_column_3_cluster',
+      'field_name' => 'field_column_3',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1055,7 +988,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 3,
+          'weight' => 9,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1065,7 +998,7 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_column_3_cluster',
+      'field_name' => 'field_column_3',
       'label' => 'Column 3',
       'required' => 0,
       'settings' => array(
@@ -1079,19 +1012,19 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '34',
+        'weight' => '5',
       ),
     ),
   );
 
-  // Exported field: 'node-cluster-field_image_cluster'.
-  $fields['node-cluster-field_image_cluster'] = array(
+  // Exported field: 'node-cluster-field_images'.
+  $fields['node-cluster-field_images'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image_cluster',
+      'field_name' => 'field_images',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -1108,7 +1041,7 @@ function dek_content_type_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '5',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -1137,29 +1070,29 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image_cluster',
-      'label' => 'Image',
+      'field_name' => 'field_images',
+      'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 1,
+        'alt_field' => 0,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 1,
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'adaptive',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '38',
+        'weight' => '6',
       ),
     ),
   );
@@ -1218,7 +1151,7 @@ function dek_content_type_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Deck',
+      'label' => 'Body',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -1233,74 +1166,7 @@ function dek_content_type_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '31',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-development_area-field_body'.
-  $fields['node-development_area-field_body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'development_area',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 1,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_body',
-      'label' => 'Body',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '20',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '33',
+        'weight' => '2',
       ),
     ),
   );
@@ -1343,7 +1209,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 5,
+          'weight' => 10,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1367,7 +1233,7 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '39',
+        'weight' => '6',
       ),
     ),
   );
@@ -1410,7 +1276,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 6,
+          'weight' => 11,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1434,7 +1300,7 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '41',
+        'weight' => '7',
       ),
     ),
   );
@@ -1477,7 +1343,7 @@ function dek_content_type_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 7,
+          'weight' => 12,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1501,19 +1367,19 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '43',
+        'weight' => '8',
       ),
     ),
   );
 
-  // Exported field: 'node-development_area-field_image_development_area'.
-  $fields['node-development_area-field_image_development_area'] = array(
+  // Exported field: 'node-development_area-field_images'.
+  $fields['node-development_area-field_images'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image_development_area',
+      'field_name' => 'field_images',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -1530,7 +1396,7 @@ function dek_content_type_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '6',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -1559,29 +1425,29 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image_development_area',
-      'label' => 'Image',
+      'field_name' => 'field_images',
+      'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 1,
+        'alt_field' => 0,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 1,
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'adaptive',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '45',
+        'weight' => '4',
       ),
     ),
   );
@@ -1650,7 +1516,7 @@ function dek_content_type_field_default_fields() {
           'size' => '50',
         ),
         'type' => 'text_textfield',
-        'weight' => '34',
+        'weight' => '3',
       ),
     ),
   );
@@ -1717,7 +1583,7 @@ function dek_content_type_field_default_fields() {
           'rows' => '20',
         ),
         'type' => 'text_textarea',
-        'weight' => '37',
+        'weight' => '5',
       ),
     ),
   );
@@ -1797,7 +1663,7 @@ function dek_content_type_field_default_fields() {
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '44',
+        'weight' => '9',
       ),
     ),
   );
@@ -1856,7 +1722,7 @@ function dek_content_type_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Deck',
+      'label' => 'Body',
       'required' => 0,
       'settings' => array(
         'display_summary' => 1,
@@ -1876,81 +1742,14 @@ function dek_content_type_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-map_view-field_body'.
-  $fields['node-map_view-field_body'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_body',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'map_view',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 1,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_body',
-      'label' => 'Body',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '1',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '20',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '33',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-map_view-field_image_map_view'.
-  $fields['node-map_view-field_image_map_view'] = array(
+  // Exported field: 'node-map_view-field_images'.
+  $fields['node-map_view-field_images'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_image_map_view',
+      'field_name' => 'field_images',
       'foreign keys' => array(
         'fid' => array(
           'columns' => array(
@@ -1967,7 +1766,7 @@ function dek_content_type_field_default_fields() {
       'locked' => '0',
       'module' => 'image',
       'settings' => array(
-        'default_image' => '7',
+        'default_image' => 0,
         'uri_scheme' => 'public',
       ),
       'translatable' => '0',
@@ -1996,29 +1795,29 @@ function dek_content_type_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_image_map_view',
-      'label' => 'Image',
+      'field_name' => 'field_images',
+      'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 1,
+        'alt_field' => 0,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 1,
+        'title_field' => 0,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
         'module' => 'image',
         'settings' => array(
-          'preview_image_style' => 'adaptive',
+          'preview_image_style' => 'thumbnail',
           'progress_indicator' => 'throbber',
         ),
         'type' => 'image_image',
-        'weight' => '36',
+        'weight' => '37',
       ),
     ),
   );
@@ -2101,7 +1900,7 @@ function dek_content_type_field_default_fields() {
   t('Column 3');
   t('Deck');
   t('Development area reference');
-  t('Image');
+  t('Images');
   t('Map id');
   t('Point of interest');
   t('Static map');
