@@ -1663,3 +1663,21 @@ div.admin-panel .description {
 #block-locale-language ul li a.active {
   /*border-bottom: 2px solid #68696B;*/
 }
+
+
+/* ---------- Footer logos ----------- */
+#footer-logos {
+  margin: 0 auto;
+  color: #000;
+  width: 750px;
+}
+#footer-logos div {
+  float: left;
+}
+#footer-logos .footer-logos-item {
+  margin: 0 12px;
+}
+#footer-logos .footer-logos-title {
+  line-height: 75px;
+  margin-right: 5px;
+}
