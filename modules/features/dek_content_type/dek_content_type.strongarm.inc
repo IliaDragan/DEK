@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * dec_content_type.strongarm.inc
+ * dek_content_type.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function dec_content_type_strongarm() {
+function dek_content_type_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();

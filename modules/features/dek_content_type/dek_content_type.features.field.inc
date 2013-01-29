@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * dec_content_type.features.field.inc
+ * dek_content_type.features.field.inc
  */
 
 /**
  * Implements hook_field_default_fields().
  */
-function dec_content_type_field_default_fields() {
+function dek_content_type_field_default_fields() {
   $fields = array();
 
   // Exported field: 'node-basic_page-body'.

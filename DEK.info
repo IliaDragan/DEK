@@ -46,3 +46,4 @@ dependencies[] = wysiwyg
 
 dek_features[] = dek_variables
 dek_features[] = theme_settings
+dek_features[] = dek_content_type

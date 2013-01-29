@@ -1,5 +1,5 @@
-name = DEC content type
-description = Content types for DEC project
+name = DEK content type
+description = Content types for DEK project
 core = 7.x
 package = Content type
 dependencies[] = ctools

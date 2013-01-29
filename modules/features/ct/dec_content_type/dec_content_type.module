@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the DEC content type feature.
- */
-
-include_once 'dec_content_type.features.inc';

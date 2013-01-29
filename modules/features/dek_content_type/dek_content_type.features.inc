@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * dec_content_type.features.inc
+ * dek_content_type.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function dec_content_type_ctools_plugin_api() {
+function dek_content_type_ctools_plugin_api() {
   list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
@@ -17,7 +17,7 @@ function dec_content_type_ctools_plugin_api() {
 /**
  * Implements hook_node_info().
  */
-function dec_content_type_node_info() {
+function dek_content_type_node_info() {
   $items = array(
     'basic_page' => array(
       'name' => t('Basic page'),
