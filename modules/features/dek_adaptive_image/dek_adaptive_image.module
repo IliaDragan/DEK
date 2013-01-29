@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the DEK adaptive image feature.
+ */
+
+include_once 'dek_adaptive_image.features.inc';
