@@ -210,6 +210,24 @@
 
   <div id="footer-wrapper"><div class="section">
 
+    <div id="footer-logos" class="clearfix">
+      <div class="footer-logos-item">
+        <div class="footer-logos-title">PUBLISHER:</div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/publisher_1.png" /></div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/publisher_2.png" /></div>
+      </div>
+      <div class="footer-logos-item">
+        <div class="footer-logos-title">PARTNER:</div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/partner_1.png" /></div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/partner_2.png" /></div>
+      </div>
+      <div class="footer-logos-item">
+        <div class="footer-logos-title">SPONSOR:</div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/sponsor_1.png" /></div>
+        <div class="footer-logos-logo"><img src="<?php print path_to_theme(); ?>/images/sponsor_2.png" /></div>
+      </div>
+    </div>
+
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
         <?php print render($page['footer']); ?>
