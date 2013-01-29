@@ -170,8 +170,7 @@ blockquote > p:first-child {
   display: inline;
 }
 a.feed-icon {
-  display: inline-block;
-  padding: 15px 0 0 0;
+  display: none;
 }
 
 /* ------------------ Table Styles ------------------ */
@@ -520,7 +519,6 @@ text-transform: uppercase;
 
 #main {
   margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 /* ----------------- Featured ----------------- */
@@ -1680,4 +1678,26 @@ div.admin-panel .description {
 #footer-logos .footer-logos-title {
   line-height: 75px;
   margin-right: 5px;
+}
+
+/* ---------- Map ----------- */
+#map {
+  float: left;
+}
+#map img {
+  width: 650px;
+  height: 600px;
+}
+
+/* ---------- Front page example ----------- */
+#block-system-main .content .content {
+  float: right;
+  width: 250px;
+  font-size: 12px;
+  margin: 0;
+  height: 600px;
+}
+
+#block-system-main .content .content img {
+  width: 250px;
 }
