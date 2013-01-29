@@ -48,6 +48,11 @@ projects[features][download][type] = git
 projects[features][download][url] = http://git.drupal.org/project/features.git
 projects[features][download][tag] = 7.x-1.0
 
+projects[features_extra][subdir] = contrib
+projects[features_extra][download][type] = git
+projects[features_extra][download][url] = http://git.drupal.org/project/features_extra.git
+projects[features_extra][download][tag] = 7.x-1.0-alpha1
+
 projects[file_entity][subdir] = contrib
 projects[file_entity][download][type] = git
 projects[file_entity][download][url] = http://git.drupal.org/project/file_entity.git
