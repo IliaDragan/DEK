@@ -10,16 +10,14 @@
 function dek_content_type_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-basic_page-body'.
-  $fields['node-basic_page-body'] = array(
+  // Exported field: 'node-basic_page-field_body'.
+  $fields['node-basic_page-field_body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
+      'entity_types' => array(),
+      'field_name' => 'field_body',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -37,7 +35,7 @@ function dek_content_type_field_default_fields() {
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
-      'type' => 'text_with_summary',
+      'type' => 'text_long',
     ),
     'field_instance' => array(
       'bundle' => 'basic_page',
@@ -46,28 +44,24 @@ function dek_content_type_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '0',
+          'weight' => 8,
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'body',
-      'label' => 'Deck',
-      'required' => 0,
+      'field_name' => 'field_body',
+      'label' => 'Body',
+      'required' => 1,
       'settings' => array(
-        'display_summary' => 1,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -76,9 +70,8 @@ function dek_content_type_field_default_fields() {
         'module' => 'text',
         'settings' => array(
           'rows' => '20',
-          'summary_rows' => 5,
         ),
-        'type' => 'text_textarea_with_summary',
+        'type' => 'text_textarea',
         'weight' => '2',
       ),
     ),
@@ -581,14 +574,14 @@ function dek_content_type_field_default_fields() {
       'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -673,16 +666,14 @@ function dek_content_type_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-cluster-body'.
-  $fields['node-cluster-body'] = array(
+  // Exported field: 'node-cluster-field_body'.
+  $fields['node-cluster-field_body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
-      'entity_types' => array(
-        0 => 'node',
-      ),
-      'field_name' => 'body',
+      'entity_types' => array(),
+      'field_name' => 'field_body',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -700,7 +691,7 @@ function dek_content_type_field_default_fields() {
       'module' => 'text',
       'settings' => array(),
       'translatable' => '0',
-      'type' => 'text_with_summary',
+      'type' => 'text_long',
     ),
     'field_instance' => array(
       'bundle' => 'cluster',
@@ -709,28 +700,24 @@ function dek_content_type_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => 10,
         ),
         'teaser' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(
-            'trim_length' => 600,
-          ),
-          'type' => 'text_summary_or_trimmed',
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
           'weight' => 0,
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'body',
+      'field_name' => 'field_body',
       'label' => 'Body',
-      'required' => 0,
+      'required' => 1,
       'settings' => array(
-        'display_summary' => 1,
         'text_processing' => '1',
         'user_register_form' => FALSE,
       ),
@@ -739,9 +726,8 @@ function dek_content_type_field_default_fields() {
         'module' => 'text',
         'settings' => array(
           'rows' => '20',
-          'summary_rows' => 5,
         ),
-        'type' => 'text_textarea_with_summary',
+        'type' => 'text_textarea',
         'weight' => '2',
       ),
     ),
@@ -1074,14 +1060,14 @@ function dek_content_type_field_default_fields() {
       'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1429,14 +1415,14 @@ function dek_content_type_field_default_fields() {
       'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1799,14 +1785,14 @@ function dek_content_type_field_default_fields() {
       'label' => 'Images',
       'required' => 0,
       'settings' => array(
-        'alt_field' => 0,
+        'alt_field' => 1,
         'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
         'max_resolution' => '',
         'min_resolution' => '',
-        'title_field' => 0,
+        'title_field' => 1,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -1898,7 +1884,6 @@ function dek_content_type_field_default_fields() {
   t('Column 1');
   t('Column 2');
   t('Column 3');
-  t('Deck');
   t('Development area reference');
   t('Images');
   t('Map id');
