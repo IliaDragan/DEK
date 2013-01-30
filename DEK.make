@@ -59,6 +59,12 @@ projects[file_entity][download][url] = http://git.drupal.org/project/file_entity
 ; This is just latest revision as of 2013-01-22.
 projects[file_entity][download][revision] = 7b6830cc2a36ec7942e7e3931487ee605983f001
 
+projects[galleria][subdir] = contrib
+projects[galleria][download][type] = git
+projects[galleria][download][url] = http://git.drupal.org/project/galleria.git
+projects[galleria][download][tag] = 7.x-1.0-beta3
+;projects[galleria][download][revision] = a8989cda34fddaf6e3b4b6373c05a87093d14f6c
+
 projects[i18n][subdir] = contrib
 projects[i18n][download][type] = git
 projects[i18n][download][url] = http://git.drupal.org/project/i18n.git
@@ -131,3 +137,6 @@ projects[adaptive_image][download][tag] = 7.x-1.4
 
 libraries[ckeditor][download][type] = get
 libraries[ckeditor][download][url] = "http://download.cksource.com/CKEditor/CKEditor/CKEditor%203.6.6/ckeditor_3.6.6.tar.gz"
+
+libraries[galleria][download][type] = get
+libraries[galleria][download][url] = "http://galleria.io/static/galleria-1.2.9.zip"
