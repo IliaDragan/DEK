@@ -64,6 +64,11 @@ projects[i18n][download][type] = git
 projects[i18n][download][url] = http://git.drupal.org/project/i18n.git
 projects[i18n][download][tag] = 7.x-1.8
 
+projects[libraries][subdir] = contrib
+projects[libraries][download][type] = git
+projects[libraries][download][url] = http://git.drupal.org/project/libraries.git
+projects[libraries][download][tag] = 7.x-2.0
+
 projects[pathauto][subdir] = contrib
 projects[pathauto][download][type] = git
 projects[pathauto][download][url] = http://git.drupal.org/project/pathauto.git
