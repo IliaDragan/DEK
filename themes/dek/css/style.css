@@ -569,7 +569,7 @@ h1#page-title {
 }
 #content h2 {
   margin-bottom: 2px;
-  font-size: 1.429em;
+  font-size: 2.429em;
   line-height: 1.4;
 }
 .node .content {
@@ -579,8 +579,8 @@ h1#page-title {
   font-size: 1em;
 }
 .node-teaser h2 {
-  margin-top: 0;
-  padding-top: 0.5em;
+  margin-top: -10px;
+  padding-top: 0;
 }
 .node-teaser h2 a {
   color: #181818;
@@ -1683,6 +1683,7 @@ div.admin-panel .description {
 /* ---------- Map ----------- */
 #map {
   float: left;
+  border: 1px solid black;
 }
 #map img {
   width: 650px;
@@ -1692,12 +1693,16 @@ div.admin-panel .description {
 /* ---------- Front page example ----------- */
 #block-system-main .content .content {
   float: right;
-  width: 250px;
+  width: 270px;
   font-size: 12px;
   margin: 0;
-  height: 600px;
 }
 
-#block-system-main .content .content img {
-  width: 250px;
+/* ---------- Main wrapper ----------- */
+
+
+/* ---------- Right bar ----------- */
+#block-system-main .content .content .field {
+  overflow: hidden;
+  margin-bottom: 10px;
 }
