@@ -99,10 +99,15 @@
     ?>
   <div class="image">
     <?php
+      $i = 0;
       foreach ($node->field_image_map_view['und'] as $value) {
-        $image_uri = file_build_uri($value['filename']);
+        fb($i);
+        if ($i <= 1) {
+          $image_uri = file_build_uri($value['filename']);
 
-        print theme('image_style', array('style_name' => 'large', 'path' => $image_uri));
+          print theme('image_style', array('style_name' => 'front', 'path' => $image_uri));
+          $i++;
+        }
       }
     ?>
 </div>
