@@ -7,7 +7,7 @@ theme = seven
 ; core
 
 dependencies[] = block
-dependencies[] = contextual_links
+dependencies[] = contextual
 dependencies[] = dblog
 dependencies[] = menu
 dependencies[] = path
@@ -25,7 +25,6 @@ dependencies[] = module_filter
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = features
-dependencies[] = features_extra
 dependencies[] = file_entity
 dependencies[] = i18n
 dependencies[] = pathauto
