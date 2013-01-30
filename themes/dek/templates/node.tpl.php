@@ -100,8 +100,7 @@
   <div class="image">
     <?php
       $i = 0;
-      foreach ($node->field_image_map_view['und'] as $value) {
-        fb($i);
+      foreach ($node->field_images['und'] as $value) {
         if ($i <= 1) {
           $image_uri = file_build_uri($value['filename']);
 
