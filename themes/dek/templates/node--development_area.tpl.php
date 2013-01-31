@@ -84,26 +84,27 @@
 
     <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-      <div id="map">
-        <img src="<?php print path_to_theme(); ?>/images/region.png" />
-      </div>
+    <div id="map">
+      <img src="<?php print path_to_theme(); ?>/images/region.png" />
+    </div>
 
-      <div class="content clearfix"<?php print $content_attributes; ?>>
-        <h2<?php print $title_attributes; ?>>
-          <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-        </h2>
-        <?php
-          // We hide the comments and links now so that we can render them later.
-          hide($content['comments']);
-          hide($content['links']);
-          print render($content);
-        ?>
+    <div class="content clearfix"<?php print $content_attributes; ?>>
+      <h2<?php print $title_attributes; ?>>
+        <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
+      </h2>
+      <?php
+        // We hide the comments and links now so that we can render them later.
+        hide($content['comments']);
+        hide($content['links']);
+        print render($content);
+      ?>
       <div class="image">
         <?php
           $i = 0;
           foreach ($node->field_images['und'] as $value) {
             if ($i <= 1) {
               $image_uri = file_build_uri($value['filename']);
+
               print theme('image_style', array('style_name' => 'front', 'path' => $image_uri));
               $i++;
             }
@@ -112,4 +113,48 @@
       </div>
     </div>
   <?php endif; ?>
-<?php endif; ?>
+<?php else: ?>
+  <!-- Display data of the content type in thre columns -->
+  <div class="content-develop_area clearfix">
+    <div class="col">
+      <?php
+        // Display body of CT
+        print render($content['field_body']);
+        // Display data of CT from 1-st column
+        print render($content['field_column_1']);
+      ?>
+    </div><!-- End .col -->
+    <div class="col">
+      <?php
+        // Display data of CT from 2-nd column
+        print render($content['field_column_2']);
+      ?>
+    </div><!-- End .col -->
+    <div class="col">
+      <?php
+        // Display data of CT from 3-th column
+        print render($content['field_column_3']);
+        // Display static map image
+      ?>
+      <div class='image-map'>
+        <?php
+          if (!empty($content['field_static_map'])) {
+            $static_map_img_lnk = file_build_uri($content['field_static_map']['#items'][0]['filename']);
+            print theme('image_style', array('style_name' => 'medium', 'path' => $static_map_img_lnk));
+          }
+        ?>
+      </div>
+      <?php
+        // Display images of the content type if exist
+        if (!empty($content['field_images']['#items'])) {
+          foreach ($content['field_images']['#items'] as $value) {
+            $image_uri = file_build_uri($value['filename']);
+            print "<span class='image-basic-page-col-3'>";
+            print theme('image_style', array('style_name' => 'thumbnail', 'path' => $image_uri));
+            print "</span>";
+          }
+        }
+      ?>
+    </div><!-- End .col -->
+  </div><!-- End .content-basic_page .clearfix -->
+<?php endif;?>
