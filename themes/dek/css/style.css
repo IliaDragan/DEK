@@ -494,6 +494,7 @@ text-transform: uppercase;
   height: 2.4em;
   line-height: normal;
   text-shadow: 0 1px #eee;
+  color: #68696B;
 }
 #block-system-main-menu a:active {
   background: #b3b3b3;
