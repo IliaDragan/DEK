@@ -568,6 +568,7 @@ text-transform: uppercase;
 h1#page-title {
   font-size: 2em;
   line-height: 1;
+  text-transform: uppercase;
 }
 #content h2 {
   margin-bottom: 2px;
@@ -1709,13 +1710,16 @@ div.admin-panel .description {
   margin-bottom: 10px;
 }
 
-/* ---------- CT basic page ----------- */
+/* ---------- CT ----------- */
 
 /* ------ Content ------ */
-.content-basic_page {
+.content-basic_page,
+.content-develop_area {
   width: 960px;
   margin: 0;
   padding: 0;
+  border-bottom: 1px solid #D3D7D9;
+  margin-bottom: 40px;
 }
 /* ---End Content ------ */
 
@@ -1724,16 +1728,29 @@ div.admin-panel .description {
   width: 300px;
   float: left;
   padding: 0 10px;
+  margin-bottom: 40px;
 }
 
 #content .col h2 {
   margin: 0;
   padding: 0;
 }
-
+.content-basic_page .image-map img {
+  width: 300px;
+}
 .image-basic-page-col-3 {
-  margin: 0 3px 3px 0;
+  margin: 0 5px 0 0;
+  float: left;
+}
+.content-develop_area .image-map img {
+  width: 295px;
+}
+
+.image-basic-page-col-3 img {
+  width: 70px;
 }
 /* ---End Columns ------ */
 
-/* ------ End CT basic page ----------- */
+/* ------ End CT----------- */
+
+
