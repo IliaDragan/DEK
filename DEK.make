@@ -62,8 +62,8 @@ projects[file_entity][download][revision] = 7b6830cc2a36ec7942e7e3931487ee605983
 projects[galleria][subdir] = contrib
 projects[galleria][download][type] = git
 projects[galleria][download][url] = http://git.drupal.org/project/galleria.git
-projects[galleria][download][tag] = 7.x-1.0-beta3
-;projects[galleria][download][revision] = a8989cda34fddaf6e3b4b6373c05a87093d14f6c
+projects[galleria][download][revision] = a8989cda34fddaf6e3b4b6373c05a87093d14f6c
+projects[galleria][patch][] = http://drupal.org/files/galleria-show_all_node_images_returned_by_view-1904070-2_0.patch
 
 projects[i18n][subdir] = contrib
 projects[i18n][download][type] = git
