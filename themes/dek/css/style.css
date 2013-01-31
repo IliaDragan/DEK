@@ -1714,7 +1714,8 @@ div.admin-panel .description {
 
 /* ------ Content ------ */
 .content-basic_page,
-.content-develop_area {
+.content-develop_area,
+.content-cluster {
   width: 960px;
   margin: 0;
   padding: 0;
