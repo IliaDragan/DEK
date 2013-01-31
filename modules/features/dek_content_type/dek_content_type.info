@@ -25,6 +25,7 @@ features[field][] = node-cluster-field_column_1
 features[field][] = node-cluster-field_column_2
 features[field][] = node-cluster-field_column_3
 features[field][] = node-cluster-field_images
+features[field][] = node-cluster-field_static_map
 features[field][] = node-development_area-body
 features[field][] = node-development_area-field_column_1
 features[field][] = node-development_area-field_column_2
